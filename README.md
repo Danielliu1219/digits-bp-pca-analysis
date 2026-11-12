@@ -88,6 +88,8 @@ python -X utf8 实验代码/report_power_analysis.py
 
 完整流程在普通笔记本电脑上通常需要数分钟。训练耗时会被重新测量，允许与报告中的原始机器耗时不同；数据数组、固定划分、验证选参、模型参数、预测、准确率、F1 和损失应保持一致。
 
+如需从零重跑，先删除 `数据/`、`结果/`、`图表/` 及三个运行生成的说明文档，再按上述顺序执行。`run_experiments.py` 默认复用已冻结结果；`review_model.py` 和 `supplement_experiments.py` 不会覆盖已有输出。`run_experiments.py` 与 `supplement_experiments.py` 可用 `--output-dir` 指定新目录。
+
 ## 代码说明
 
 | 文件 | 作用 |
